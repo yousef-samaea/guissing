@@ -2,88 +2,34 @@
 let a =0;
 let yourn ='';
 function greeting() {
-yourn = prompt('inter your name');
-alert('welcome '+ yourn);
+  yourn = prompt('inter your name');
+  alert('welcome '+ yourn);
 }
 greeting();
-
-let myName='';
-while(myName !== 'jilldshisdhud')
-{
-  myName = prompt('is my name yousef?');
-  myName = myName.toLowerCase();
-  if(myName === 'yes' || myName==='no' || myName==='y' || myName==='n' )
+let x = ['is my name yousef','am i fat','am i superman','am i funny?','am i tall?'];
+let y = ['yes','y','no','n'];
+let z = ['right','wrong'];
+function questions (num){
+  let myName='';
+  while(myName !== 'jilldshisdhud')
   {
-    break;
+    myName = prompt(x[num]).toLowerCase(); // x[1] prompt('is my')
+    if(myName === y[0] || myName===y[1] || myName===y[2] || myName===y[3] )
+    {
+      break;
+    }
   }
+  if(myName === y[0] || myName===y[1] )
+  {console.log(z[0]);
+    alert(z[0]);
+    a++;}
+  else{console.log(z[1]);
+    alert(z[1]);}
 }
-if(myName === 'yes' || myName==='y' )
-{console.log('right');
-  alert('right');
-  a++;}
-else{console.log('wrong');
-  alert('wrong');} //yes
-while(myName !== 'jilldshisdhud')
+for(let i = 0; i<=4; i++)
 {
-  myName = prompt('am i fat?');
-  myName = myName.toLowerCase();
-  if(myName === 'yes' || myName==='no' || myName==='y' || myName==='n' )
-  {
-    break;
-  }
+  questions(i);
 }
-if(myName === 'yes' || myName==='y' )
-{console.log('right');
-  alert('right');
-  a++;}
-else{console.log('wrong');
-  alert('wrong');}
-while(myName !== 'jilldshisdhud')
-{
-  myName = prompt('am i tall?');
-  myName = myName.toLowerCase();
-  if(myName === 'yes' || myName==='no' || myName==='y' || myName==='n' )
-  {
-    break;
-  }
-}
-if(myName === 'yes' || myName==='y' )
-{console.log('right');
-  alert('right');
-  a++;}
-else{console.log('wrong');
-  alert('wrong');}
-while(myName !== 'jilldshisdhud')
-{
-  myName = prompt('am i superman?');
-  myName = myName.toLowerCase();
-  if(myName === 'yes' || myName==='no' || myName==='y' || myName==='n' )
-  {
-    break;
-  }
-}
-if(myName === 'yes' || myName==='y' )
-{console.log('right');
-  alert('right');
-  a++;}
-else{console.log('wrong');
-  alert('wrong');}
-while(myName !== 'jilldshisdhud')
-{
-  myName = prompt('am i funny?');
-  myName = myName.toLowerCase();
-  if(myName === 'yes' || myName==='no' || myName==='y' || myName==='n' )
-  {
-    break;
-  }
-}
-if(myName === 'yes' || myName==='y' )
-{console.log('right');
-  alert('right');
-  a++;}
-else{console.log('wrong');
-  alert('wrong');}
-// alert('come bace agane '+ yourn);
 let mno = 9;
 let check = false;
 for( let i = 0; 4 > i ; i++) {
