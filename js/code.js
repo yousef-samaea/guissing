@@ -1,8 +1,12 @@
 'use strict';
 let a =0;
 let yourn ='';
+function greeting() {
 yourn = prompt('inter your name');
 alert('welcome '+ yourn);
+}
+greeting();
+
 let myName='';
 while(myName !== 'jilldshisdhud')
 {
