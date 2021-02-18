@@ -2,7 +2,7 @@
 let a =0;
 let yourn ='';
 function greeting() {
-  yourn = prompt('inter your name');
+  yourn = prompt('ESnter your name');
   alert('welcome '+ yourn);
 }
 greeting();
@@ -13,7 +13,7 @@ function questions (num){
   let myName='';
   while(myName !== 'jilldshisdhud')
   {
-    myName = prompt(x[num]).toLowerCase(); // x[1] prompt('is my')
+    myName = prompt(x[num]).toLowerCase();
     if(myName === y[0] || myName===y[1] || myName===y[2] || myName===y[3] )
     {
       break;
@@ -44,11 +44,13 @@ for( let i = 0; 4 > i ; i++) {
   else
   {
     alert('right');
+    check = true;
     a++;
     break;
   }
 }
-alert('try in another time');
+if(check === false){
+  alert('try in another time');}
 let arr = ['pizza','orange','meat','mansaf'];
 for( let j = 0; 6 > j ; j++) {
   let food = prompt('guess my favorite food');
